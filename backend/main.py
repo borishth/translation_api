@@ -44,10 +44,10 @@ async def translate_text(request: TranslationRequest):
         "input_text": request.text
     }
     print(payload)
+
     try:
         async with aiohttp.ClientSession() as session:
-            async with session.post("http://172.16.92.245:8088/translate", json=payload) as response:
-    # ...
+            async with session.post("https://clst.iitg.ac.in/apiv3/translate", json=payload) as response:
                 if response.status == 200:
                     response_data = await response.json()
         translated_text = response_data.get("output_text")
