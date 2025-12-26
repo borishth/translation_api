@@ -1,0 +1,6 @@
+curl -X POST "https://clst.iitg.ac.in/apiv3/translate" -H "accept: application/json" -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJtYW5nYWwiLCJleHAiOjE3NjY3Nzk2ODB9.HFSLC1EA9s9hYUwRFZZNokzm__rDjJ8278XrNG4Jh68" -d '{"text": "Guwahati?", "source_lang": "eng_Latn", "target_lang": "asm_Beng"}'
+curl -X POST https://translation-api-boris-projects-5625967b.vercel.app/translate -H "accept: application/json" -H "Content-Type: application/json" -d '{"text": "Guwahati?", "source_lang": "eng_Latn", "target_lang": "asm_Beng"}'
+
+
+curl -X POST "https://translation-api-boris-projects-5625967b.vercel.app/translate" -H "Content-Type: application/json" -Body '{"text":"Guwahati?","source_lang":"eng_Latn","target_lang":"asm_Beng"}'
+
